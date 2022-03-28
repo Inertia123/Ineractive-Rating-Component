@@ -1,5 +1,7 @@
 @import url("https://fonts.googleapis.com/css2?family=Overpass:wght@400;700&display=swap");
-*, *::after, *::before {
+*,
+*::after,
+*::before {
   margin: 0;
   padding: 0;
   -webkit-box-sizing: border-box;
@@ -21,19 +23,23 @@ body {
 
 body main {
   background: #252d37;
-  max-width: 85%;
-  padding: 1.5rem;
+  max-width: 22rem;
+  padding: 1.5rem 1.5rem;
   border-radius: 1rem;
 }
 
 @media only screen and (min-width: 750px) {
   body main {
-    max-width: 24%;
+    max-width: 25rem;
     padding: 2rem;
   }
 }
 
-body main .container .star {
+body main .hide {
+  display: none;
+}
+
+body main .container-one .star {
   display: -ms-grid;
   display: grid;
   place-items: center;
@@ -44,23 +50,23 @@ body main .container .star {
   margin-bottom: 1rem;
 }
 
-body main .container .card-content {
+body main .container-one .card-content {
   margin-bottom: 1.5rem;
 }
 
-body main .container .card-content h1 {
+body main .container-one .card-content h1 {
   color: white;
   font-size: 1.5rem;
   margin-bottom: 1rem;
 }
 
-body main .container .card-content p {
+body main .container-one .card-content p {
   color: #959eac;
   font-size: 0.93rem;
   line-height: 1.3rem;
 }
 
-body main .container .rating {
+body main .container-one .rating {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -74,7 +80,7 @@ body main .container .rating {
   margin-bottom: 1.5rem;
 }
 
-body main .container .rating button {
+body main .container-one .rating button {
   outline: none;
   border: none;
   width: 3rem;
@@ -89,18 +95,18 @@ body main .container .rating button {
   place-items: center;
 }
 
-body main .container .rating button:hover {
+body main .container-one .rating button:hover {
   background: #fb7413;
   color: white;
 }
 
-body main .container .rating button:active,
-body main .container .rating button :focus {
+body main .container-one .rating button:active,
+body main .container-one .rating button :focus {
   background: #7c8798;
   color: white;
 }
 
-body main .container .btn {
+body main .container-one .btn {
   outline: none;
   border: none;
   background: #fb7413;
@@ -114,8 +120,58 @@ body main .container .btn {
   cursor: pointer;
 }
 
-body main .container .btn:hover {
+body main .container-one .btn:hover {
   background: white;
   color: #fb7413;
+}
+
+body main .container-two {
+  text-align: center;
+  padding: 0.6rem 0;
+}
+
+body main .container-two .thank img {
+  height: 6rem;
+}
+
+body main .container-two .card-contentt {
+  margin-top: 1rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+body main .container-two .card-contentt .result {
+  background-color: rgba(61, 61, 65, 0.5);
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+  text-align: center;
+  padding: 0.25rem 0.7rem;
+  border-radius: 1rem;
+  color: #fb7413;
+  margin-bottom: 1.5rem;
+}
+
+body main .container-two .card-contentt h1 {
+  color: white;
+  font-size: 1.5rem;
+  margin-bottom: 0.8rem;
+}
+
+body main .container-two .card-contentt p {
+  color: #959eac;
+  font-size: 0.93rem;
+  line-height: 1.3rem;
 }
 /*# sourceMappingURL=style.css.map */
