@@ -66,9 +66,7 @@ body {
         justify-content: space-between;
         width: 100%;
         margin-bottom: 1.5rem;
-        button {
-          outline: none;
-          border: none;
+        .rating-btn{
           width: 3rem;
           aspect-ratio: 1;
           border-radius: 100%;
@@ -82,11 +80,10 @@ body {
             background: $Orange;
             color: $White;
           }
-          &:active,
-          :focus {
-            background: $Medium-Grey;
-            color: $White;
-          }
+        }
+        .active{
+          background: $Medium-Grey;
+          color: $White;
         }
       }
       .btn {

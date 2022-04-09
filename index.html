@@ -11,7 +11,7 @@
 </head>
 <body>
   <main>
-    <div class="container-one hide">
+    <div class="container-one">
       <div class="star">
         <img src="./images/icon-star.svg" alt="Star">
       </div>
@@ -21,50 +21,27 @@
         to help us improve our offering!</p>
       </div>
       <div class="rating">
-        <button>1</button>
-        <button>2</button>
-        <button>3</button>
-        <button>4</button>
-        <button>5</button>
+        <div class="rating-btn">1</div>
+        <div class="rating-btn">2</div>
+        <div class="rating-btn active">3</div>
+        <div class="rating-btn">4</div>
+        <div class="rating-btn">5</div>
       </div>
-      <button class="btn" >Submit</button>
+      <button class="btn">Submit</button>
     </div>
-    <div class="container-two">
+    <div class="container-two hide">
       <div class="thank">
         <img src="./images/illustration-thank-you.svg" alt="Thank You Illustration">
       </div>
       <div class="card-contentt">
         <div class="result">
-          <div>You selected <span>4</span> out of 5</div>
+          <div>You selected <span class="score" >3</span> out of 5</div>
         </div>
         <h1>Thank you!</h1>
         <p>We appreciate you taking the time to give a rating. If you ever need more support, don't hesitate to get in touch!</p>
       </div>
     </div>
   </main>
-
-  <!-- Rating state start -->
-
-  <!-- How did we do?
-
-  
-
-  1 2 3 4 5
-
-  Submit -->
-
-  <!-- Rating state end -->
-
-  <!-- Thank you state start -->
-
-  <!-- You selected Add rating here out of 5 -->
-
-  <!-- Thank you!
-
-  We appreciate you taking the time to give a rating. If you ever need more support, 
-  don’t hesitate to get in touch! -->
-
-  <!-- Thank you state end -->
-
+  <script src="./script.js"></script>
 </body>
 </html>

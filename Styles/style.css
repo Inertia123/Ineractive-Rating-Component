@@ -80,9 +80,7 @@ body main .container-one .rating {
   margin-bottom: 1.5rem;
 }
 
-body main .container-one .rating button {
-  outline: none;
-  border: none;
+body main .container-one .rating .rating-btn {
   width: 3rem;
   aspect-ratio: 1;
   border-radius: 100%;
@@ -95,13 +93,12 @@ body main .container-one .rating button {
   place-items: center;
 }
 
-body main .container-one .rating button:hover {
+body main .container-one .rating .rating-btn:hover {
   background: #fb7413;
   color: white;
 }
 
-body main .container-one .rating button:active,
-body main .container-one .rating button :focus {
+body main .container-one .rating .active {
   background: #7c8798;
   color: white;
 }
